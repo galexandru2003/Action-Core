@@ -6,6 +6,7 @@
     <Authors>Ringhel</Authors>
     <Company>Ringhel</Company>
     <Product>Procesio</Product>
+    <RepositoryUrl>https://github.com/PROCESIO/Action-Core.git</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
