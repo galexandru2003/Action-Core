@@ -9,7 +9,7 @@ namespace Action.Core.ActionDecorators
     /// Attribute that defines a validation
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = true)]
-    public class ValidatorDecoratorAttribute : Attribute
+    public class ValidatorAttribute : Attribute
     {
         /// <summary>
         /// Describes wheter the validation is mandatory or not
@@ -19,6 +19,6 @@ namespace Action.Core.ActionDecorators
         /// <summary>
         /// Describes the type of validation that will be used
         /// </summary>
-        public ValidationTypes Expects { get; set; } = ValidationTypes.None;
+        public ExpectedType Expects { get; set; }
     }
 }

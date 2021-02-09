@@ -14,6 +14,6 @@ namespace Action.Core.ActionDecorators
         /// <summary>
         /// Specifies whether a property is input/output
         /// </summary>
-        public PropertyOrientation IOProperty { get; set; }
+        public Direction IOProperty { get; set; }
     }
 }

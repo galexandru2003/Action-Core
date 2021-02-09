@@ -10,7 +10,7 @@ namespace Action.Core.TemplateAction
 {
     [ClassDecorator(Name = "Custom Template Action", Shape = ActionShape.Circle, Description = "Custom Template Action Description")]
     [FEDecorator(Label = "Configuration Modal", Type = FeComponentType.Modal, Parent = "Config_Modal")]
-    public class CustomTemplateAction : IAction
+    public sealed class CustomTemplateAction : IAction
     {
         #region Options
         private IEnumerable<OptionModel> ConfigP1Options { get; } = new List<OptionModel>() 
@@ -41,21 +41,21 @@ namespace Action.Core.TemplateAction
 
         #region Properties
         [FEDecorator(Label = "FE Input property", Type = FeComponentType.Select, Tab = "Input Tab")]
-        [BEDecorator(IOProperty = PropertyOrientation.Input)]
-        [ValidatorDecorator(IsRequired = false)]
+        [BEDecorator(IOProperty = Direction.Input)]
+        [Validator(IsRequired = false)]
         public string Input1 { get; set; }
 
         [FEDecorator(Label = "FE Output property", Type = FeComponentType.Number, Tab = "Output Tab")]
-        [BEDecorator(IOProperty = PropertyOrientation.Output)]
-        [ValidatorDecorator(IsRequired = true, Expects = ValidationTypes.Number)]
+        [BEDecorator(IOProperty = Direction.Output)]
+        [Validator(IsRequired = true, Expects = ExpectedType.Number)]
         public int Output1 { get; set; }
 
         [FEDecorator(Label = "FE Config property 1", Type = FeComponentType.Select, Parent = "Config_Modal", Options = "ConfigP1Options")]
-        [BEDecorator(IOProperty = PropertyOrientation.Output)]
+        [BEDecorator(IOProperty = Direction.Output)]
         public string OutConfig1 { get; set; }
 
         [FEDecorator(Label = "FE Config property 2", Type = FeComponentType.Select, Parent = "Config_Modal", Options = "ConfigP2Options")]
-        [BEDecorator(IOProperty = PropertyOrientation.Output)]
+        [BEDecorator(IOProperty = Direction.Output)]
         public string OutConfig2 { get; set; }
         #endregion
 

@@ -12,6 +12,6 @@ namespace Action.Core.Utils
         Email_modal = 4,
         Checkbox = 5,
         Number = 6,
-        Modal
+        Modal = 7,
     }
 }

@@ -10,6 +10,6 @@ namespace Action.Core.Utils
     public enum ActionShape
     {
         Square = 1,
-        Circle = 2
+        Circle = 2,
     }
 }
