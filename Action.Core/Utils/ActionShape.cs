@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ringhel.Procesio.Action.Core.Utils
+namespace Action.Core.Utils
 {
     /// <summary>
     /// The shape of an action

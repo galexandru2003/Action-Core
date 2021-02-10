@@ -28,7 +28,7 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Pack
-      run: dotnet pack --no-build --configuration Debug Ringhel.Procesio.Action.Core/Ringhel.Procesio.Action.Core.csproj --output ./work/Debug
+      run: dotnet pack --no-build --configuration Debug Action.Core/Action.Core.csproj --output ./work/Debug
     - name: Publish
       run: dotnet nuget push ./work/Debug/*.nupkg -k ${{secrets.DEPLOY_KEY}} -s https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --skip-duplicate -n true
       env:

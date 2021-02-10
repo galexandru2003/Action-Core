@@ -1,12 +1,12 @@
-﻿using Ringhel.Procesio.Action.Core.ActionDecorators;
-using Ringhel.Procesio.Action.Core.Models;
-using Ringhel.Procesio.Action.Core.Utils;
+﻿using Action.Core.ActionDecorators;
+using Action.Core.Models;
+using Action.Core.Utils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ringhel.Procesio.Action.Core.TemplateAction
+namespace Action.Core.TemplateAction
 {
     [ClassDecorator(Name = "Custom Template Action", Shape = ActionShape.Circle, Description = "Custom Template Action Description")]
     [FEDecorator(Label = "Configuration Modal", Type = FeComponentType.Modal, Parent = "Config_Modal")]

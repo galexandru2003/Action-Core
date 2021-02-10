@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ringhel.Procesio.Action.Core.Models
+namespace Action.Core.Models
 {
     /// <summary>
     /// Model for the option of a FE component 
