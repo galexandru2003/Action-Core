@@ -2,15 +2,16 @@
 
 	<PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
-		<PackageId>Ringhel.Procesio.Ringhel.Procesio.Action.Core</PackageId>
+		<PackageId>Ringhel.Procesio.Action.Core</PackageId>
 		<Authors>Ringhel</Authors>
 		<Company>Ringhel</Company>
 		<Product>Procesio</Product>
 		<RepositoryUrl>https://github.com/PROCESIO/Action-Core.git</RepositoryUrl>
-		<Version>1.0.1.5</Version>
-		<AssemblyName>Ringhel.Procesio.Ringhel.Procesio.Action.Core</AssemblyName>
-		<PackageId>Ringhel.Procesio.Ringhel.Procesio.Action.Core</PackageId>
-		<RootNamespace>Ringhel.Procesio.Ringhel.Procesio.Action.Core</RootNamespace>
+		<Version>1.0.1.6</Version>
+		<AssemblyName>Ringhel.Procesio.Action.Core</AssemblyName>
+		<PackageId>Ringhel.Procesio.Action.Core</PackageId>
+		<RootNamespace>Ringhel.Procesio.Action.Core</RootNamespace>
+		<SignAssembly>false</SignAssembly>
 	</PropertyGroup>
 
 </Project>
