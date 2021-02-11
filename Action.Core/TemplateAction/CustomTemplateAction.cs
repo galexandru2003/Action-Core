@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Action.Core.TemplateAction
 {
-    [ClassDecorator(Name = "Custom Template Action", Shape = ActionShape.Circle, Description = "Custom Template Action Description")]
-    [FEDecorator(Label = "Configuration Modal", Type = FeComponentType.Modal, Parent = "Config_Modal")]
+    [ClassDecorator(Name = "Custom Template Action", Shape = ActionShape.Circle, Description = "Custom Template Action Description", Category =Category.CAT_1)]
+    [FEDecorator(Label = "Configuration Modal", Type = FeComponentType.Modal, Parent = "Config_Modal", Tab ="Input Tab")]
     public sealed class CustomTemplateAction : IAction
     {
         #region Options
