@@ -1,9 +1,9 @@
-﻿using Action.Core.Utils;
+﻿using Ringhel.Procesio.Action.Core.Utils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Action.Core.ActionDecorators
+namespace Ringhel.Procesio.Action.Core.ActionDecorators
 {
     /// <summary>
     /// Attribute that is used to define some basic informations about the action
