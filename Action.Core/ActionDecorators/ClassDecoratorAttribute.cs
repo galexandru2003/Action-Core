@@ -25,5 +25,10 @@ namespace Action.Core.ActionDecorators
         /// Action description
         /// </summary>
         public string Description { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Action category
+        /// </summary>
+        public Category Category { get; set; }
     }
 }
