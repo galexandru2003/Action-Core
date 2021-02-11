@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Action.Core.Utils
+namespace Ringhel.Procesio.Action.Core.Utils
 {
     public enum ExpectedType
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Action.Core
+namespace Ringhel.Procesio.Action.Core
 {
     public interface IAction
     {
