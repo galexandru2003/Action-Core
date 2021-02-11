@@ -13,7 +13,10 @@ namespace Ringhel.Procesio.Action.Core.TemplateAction
     public sealed class CustomTemplateAction : IAction
     {
         #region Options
-        private IEnumerable<OptionModel> ConfigP1Options { get; } = new List<OptionModel>() 
+        /// <summary>
+        /// Always use static IEnumerable for Options lists.
+        /// </summary>
+        private static IEnumerable<OptionModel> ConfigP1Options { get; } = new List<OptionModel>() 
         { 
             new OptionModel()
             {
@@ -25,7 +28,10 @@ namespace Ringhel.Procesio.Action.Core.TemplateAction
                 Value = "Value for option 2"
             }
         };
-        private IEnumerable<OptionModel> ConfigP2Options { get; } = new List<OptionModel>()
+        /// <summary>
+        /// Always use static IEnumerable for Options lists.
+        /// </summary>
+        private static IEnumerable<OptionModel> ConfigP2Options { get; } = new List<OptionModel>()
         {
             new OptionModel()
             {
