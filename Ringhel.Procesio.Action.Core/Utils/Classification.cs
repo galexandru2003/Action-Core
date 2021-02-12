@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Ringhel.Procesio.Action.Core.Utils
 {
-    public enum Category
+    public enum Classification
     {
         CAT_1 = 1,
         CAT_2 = 2,

@@ -33,6 +33,11 @@ namespace Ringhel.Procesio.Action.Core.ActionDecorators
         public string Options { get; set; }
 
         /// <summary>
+        /// The property default value converted to String
+        /// </summary>
+        public string DefaultValue { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         public FeComponentType Type { get; set; }
