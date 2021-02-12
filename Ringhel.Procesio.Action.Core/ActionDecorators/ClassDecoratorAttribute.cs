@@ -29,6 +29,6 @@ namespace Ringhel.Procesio.Action.Core.ActionDecorators
         /// <summary>
         /// Action category
         /// </summary>
-        public Category Category { get; set; }
+        public Classification Classification { get; set; }
     }
 }
