@@ -12,24 +12,25 @@ namespace TestAction
     {
 
         #region Options
-        private const string ConfigP1Options = "[{\"Name\":\"my name1\",\"Value\":\"my name value 1\"},{\"Name\":\"my name2\",\"Value\":\"my name value 2\"}]";
+        private const string ConfigP1Options = "[{\"Name\":\"my name1\",\"Value\":\"1\"},{\"Name\":\"my name2\",\"Value\":\"2\"},{\"Name\":\"my name3\",\"Value\":\"3\"}]";
         private const string ConfigP2Options = "[{\"Name\":\"my name3\",\"Value\":\"my name value 3\"},{\"Name\":\"my name4\",\"Value\":\"my name value 4\"}]";
         #endregion
 
         #region Properties
-        [FEDecorator(Label = "FE Input property", Type = FeComponentType.Select, Tab = "Input Tab", DefaultValue = "1")]
+        [FEDecorator(Label = "FE Input property", Type = FeComponentType.Select, Tab = "Input Tab", Options = "ConfigP1Options")]
         [BEDecorator(IOProperty = Direction.Input)]
         [Validator(IsRequired = false)]
-        public string Input1 { get; set; }
+        public int Input1 { get; set; }
+
+        [FEDecorator(Label = "FE Input property", Type = FeComponentType.Number, Tab = "Input Tab", DefaultValue = "0")]
+        [BEDecorator(IOProperty = Direction.Input)]
+        [Validator(IsRequired = false)]
+        public int Input2 { get; set; }
 
         [FEDecorator(Label = "FE Output property", Type = FeComponentType.Number, Tab = "Output Tab", DefaultValue = "2")]
         [BEDecorator(IOProperty = Direction.Output)]
         [Validator(IsRequired = true, Expects = ExpectedType.Number)]
         public int Output1 { get; set; }
-
-        [FEDecorator(Label = "FE Config property 1", Type = FeComponentType.Select, Parent = "Config_Modal", Options = "ConfigP1Options")]
-        [BEDecorator(IOProperty = Direction.Output)]
-        public string OutConfig1 { get; set; }
 
         [FEDecorator(Label = "FE Config property 2", Type = FeComponentType.Select, Parent = "Config_Modal", Options = "ConfigP2Options")]
         [BEDecorator(IOProperty = Direction.Output)]
@@ -37,9 +38,9 @@ namespace TestAction
         #endregion
 
         #region Execute
-        public Task Execute()
+        public async Task Execute()
         {
-            throw new NotImplementedException();
+            Output1 = Input1 + Input2;
         }
         #endregion
     }
