@@ -6,8 +6,8 @@ namespace Ringhel.Procesio.Action.Core.Utils
 {
     public enum Classification
     {
-        CAT_1 = 1,
-        CAT_2 = 2,
-        CAT_3 = 3,
+        cat1 = 1,
+        cat2 = 2,
+        cat3 = 3,
     }
 }

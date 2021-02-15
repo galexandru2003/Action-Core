@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestAction
 {
-    [ClassDecorator(Name = "Custom Template Action", Shape = ActionShape.Circle, Description = "Custom Template Action Description", Classification = Classification.CAT_1)]
+    [ClassDecorator(Name = "Custom Template Action", Shape = ActionShape.Circle, Description = "Custom Template Action Description", Classification = Classification.cat1)]
     [FEDecorator(Label = "Configuration Modal", Type = FeComponentType.Modal, Parent = "Config_Modal", Tab = "Input Tab")]
     public class MyCustonAction : IAction
     {
